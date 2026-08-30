@@ -85,7 +85,7 @@ catch(Exception $e){
     </header>
     <label for="">Name:</label>
     <input id="my" type="text" placeholder="enter name">
-    <button type="submit" onclick="myname()"> Submit
+    <!-- <button type="submit" onclick="myname()"> Submit -->
     </button>
 
     <p id="result"></p>

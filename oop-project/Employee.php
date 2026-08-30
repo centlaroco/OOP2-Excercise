@@ -1,7 +1,6 @@
 <?php
 class Employee{
     protected $name;
-
     public function __construct($name){
         $this->name = $name;
     }
@@ -51,10 +50,6 @@ class PartTimeEmployee extends Employee{
 }
 
 class FreelanceEmployee extends Employee{
-    /*
-        rateProject
-        numberOfProjects
-    */
     private $rateProject;
     private $numberOfProjects;
 
@@ -71,7 +66,7 @@ class FreelanceEmployee extends Employee{
 
 $employees = [
     new FullTimeEmployee("Vincent", 2000),
-    new PartTimeEmployee("cent",2,2),
+    new PartTimeEmployee("Mason",2,2),
     new FreelanceEmployee("vincee",2,2)
 ];
 
@@ -87,21 +82,23 @@ $employees = [
     <title>Exercise 1</title>
 </head>
 <body>
-   <body class="bg-gray-100 p-10">
-    <div class="max-w-2xl mx-auto space-y-4 bg-white border p-10">
+   <body class="bg-gray-100 min-h-screen flex justify-center items-center">
+     
+    <div class="w-[50%] space-y-4 bg-white border p-10">
+        <h1 class="p-3 bg-blue-100 w-[100px] rounded-full">Exercise 1</h1>
         <?php foreach ($employees as $employee): ?>
             <div class="bg-gray-100 p-5 rounded-lg border border-gray-100 shadow">
                 <?php if ($employee instanceof FullTimeEmployee): ?>
                     <h2 class="text-xl font-bold text-blue-600">
-                        Full Time Employee
+                        <?=get_class($employee)?>
                     </h2>
                 <?php elseif ($employee instanceof PartTimeEmployee): ?>
                     <h2 class="text-xl font-bold text-green-600">
-                        Part Time Employee
+                        <?=get_class($employee)?>
                     </h2>
                 <?php elseif ($employee instanceof FreelanceEmployee): ?>
                     <h2 class="text-xl font-bold text-purple-600">
-                        Freelance Employee
+                        <?=get_class($employee)?>
                     </h2>
                 <?php endif; ?>
                 <p>Name: <?= $employee->getName() ?></p>

@@ -5,21 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>OOP Projects</title>
+    <script src="/index.js"></script>
+    <title>OOP-2 Exercise</title>
 </head>
 
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
     <div class="bg-white p-8 rounded shadow-md w-full max-w-xl">
-        <h1 class="text-3xl font-bold text-center text-red-600 mb-6">OOP Project Files</h1>
 
-        <ul class="space-y-3">
-            <li><a href="oop-project/Book.php" class="block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">Book</a></li>
-            <li><a href="oop-project/Employee.php" class="block p-3 bg-green-500 text-white rounded hover:bg-green-600">Employee</a></li>
-            <li><a href="oop-project/EmployeeBonusCalc.php" class="block p-3 bg-purple-500 text-white rounded hover:bg-purple-600">Employee Bonus Calc</a></li>
-            <li><a href="oop-project/Payment.php" class="block p-3 bg-yellow-500 text-white rounded hover:bg-yellow-600">Payment</a></li>
-            <li><a href="oop-project/Library.php" class="block p-3 bg-indigo-500 text-white rounded hover:bg-indigo-600">Library</a></li>
-            <li><a href="oop-project/Animal.php" class="block p-3 bg-pink-500 text-white rounded hover:bg-pink-600">Animal</a></li>
-        </ul>
+        <h1 class="text-3xl font-bold text-center text-red-600 mb-6">
+            OOP Exercise
+        </h1>
+
+        <div class=" grid gap-3 md:grid-cols-2 ">
+            <div onclick="openModal('oop-project/Employee.php')"
+                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
+                Exercise 1
+            </div>
+
+            <div onclick="openModal('oop-project/shape.php')"
+                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Exercise 2
+            </div>
+
+            <div onclick="openModal('oop-project/Employee.php')"
+                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Exercise 3
+            </div>
+
+            <div onclick="openModal('oop-project/Employee.php')"
+                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Exercise 4
+            </div>
+            <div onclick="openModal('oop-project/Employee.php')"
+                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Exercise 5
+            </div>
+            <div onclick="openModal('oop-project/Employee.php')"
+                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Exercise 6
+            </div>
+            <div onclick="openModal('oop-project/Employee.php')"
+                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Exercise 7
+            </div>
+            <div onclick="openModal('oop-project/Employee.php')"
+                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Exercise 8
+            </div>
+            <div onclick="openModal('oop-project/Employee.php')"
+                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Exercise 9
+            </div>
+            <div onclick="openModal('oop-project/Employee.php')"
+                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Exercise 10
+            </div>
+        </div>
     </div>
+
+
+    <!-- MODAL -->
+    <div id="exerciseModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-4xl relative">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between p-4 border-b">
+
+                <h2 class="text-xl font-bold"></h2>
+                <button onclick="closeModal()" class="text-gray-500 hover:text-red-500 text-2xl">
+                    &times;
+                </button>
+            </div>
+            <!-- PHP File -->
+            <iframe id="modalFrame" src="" class="w-full h-[calc(80vh-100px)] rounded-b-lg border-0">
+            </iframe>
+        </div>
+    </div>
+
 </body>
+
 </html>
