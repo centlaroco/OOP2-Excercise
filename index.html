@@ -9,56 +9,66 @@
     <title>OOP-2 Exercise</title>
 </head>
 
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div class="bg-white p-8 rounded shadow-md w-full max-w-xl">
+<body class="bg-white min-h-screen flex items-center justify-center">
+    <div class="bg-[#1E4174] p-8 rounded shadow-xl w-full max-w-3xl">
 
-        <h1 class="text-3xl font-bold text-center text-red-600 mb-6">
-            OOP Exercise
+        <h1 class="text-3xl font-bold text-center text-[#1E4174] mb-6 p-4 bg-[#DDA94B]">
+            OOP-2 Exercise
         </h1>
 
-        <div class=" grid gap-3 md:grid-cols-2 ">
+        <div class=" grid gap-3 md:grid-cols-2 cursor-pointer font-bold text-[#1E4174]">
             <div onclick="openModal('oop-project/Employee.php')"
-                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">
-                Exercise 1
+                class="w-full text-left block p-3 bg-[#DDA94B]  rounded hover:bg-yellow-200 ">
+                Exercise 1-
+                <span class="font-normal">Employee Salary Calculator</span>
             </div>
 
             <div onclick="openModal('oop-project/shape.php')"
-                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-                Exercise 2
+                class="w-full text-left block p-3 bg-[#DDA94B] rounded hover:bg-yellow-200">
+                Exercise 2-
+                <span class="font-normal">Shape Area Calculator</span>
             </div>
 
-            <div onclick="openModal('oop-project/Employee.php')"
-                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-                Exercise 3
+            <div onclick="openModal('oop-project/Animal.php', 'Exercise 3')"
+                class="w-full text-left block p-3 bg-[#DDA94B] rounded hover:bg-yellow-200">
+                Exercise 3-
+                <span class="font-normal">Animal Sounds</span>
             </div>
 
-            <div onclick="openModal('oop-project/Employee.php')"
-                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-                Exercise 4
+            <div onclick="openModal('oop-project/Vehicle.php')"
+                class="w-full text-left block p-3 bg-[#DDA94B] rounded hover:bg-yellow-200">
+                Exercise 4-
+                <span class="font-normal">Vehicle Rental System</span>
             </div>
-            <div onclick="openModal('oop-project/Employee.php')"
-                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-                Exercise 5
+            <div onclick="openModal('oop-project/Payment.php')"
+                class="w-full text-left block p-3 bg-[#DDA94B] rounded hover:bg-yellow-200">
+                Exercise 5-
+                <span class="font-normal">Payment Methods</span>
             </div>
-            <div onclick="openModal('oop-project/Employee.php')"
-                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-                Exercise 6
+            <div onclick="openModal('oop-project/Student.php')"
+                class="w-full text-left block p-3 bg-[#DDA94B] rounded hover:bg-yellow-200">
+                Exercise 6-
+                <span class="font-normal">Student Grade Evaluation</span>
             </div>
-            <div onclick="openModal('oop-project/Employee.php')"
-                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-                Exercise 7
+            <div onclick="openModal('oop-project/EmployeeBonusCalc.php')"
+                class="w-full text-left block p-3 bg-[#DDA94B] rounded hover:bg-yellow-200">
+                Exercise 7-
+                <span class="font-normal">Employee Bonus Calculator</span>
             </div>
-            <div onclick="openModal('oop-project/Employee.php')"
-                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-                Exercise 8
+            <div onclick="openModal('oop-project/OnlineStore.php')"
+                class="w-full text-left block p-3 bg-[#DDA94B] rounded hover:bg-yellow-200">
+                Exercise 8-
+                <span class="font-normal">Online Store Shopping</span>
             </div>
-            <div onclick="openModal('oop-project/Employee.php')"
-                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-                Exercise 9
+            <div onclick="openModal('oop-project/Library.php')"
+                class="w-full text-left block p-3 bg-[#DDA94B] rounded hover:bg-yellow-200">
+                Exercise 9-
+                <span class="font-normal">Library Materials</span>
             </div>
-            <div onclick="openModal('oop-project/Employee.php')"
-                class="w-full text-left block p-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-                Exercise 10
+            <div onclick="openModal('oop-project/Character.php')"
+                class="w-full text-left block p-3 bg-[#DDA94B] rounded hover:bg-yellow-200">
+                Exercise 10-
+                <span class="font-normal">Game Characters</span>
             </div>
         </div>
     </div>
@@ -66,7 +76,7 @@
 
     <!-- MODAL -->
     <div id="exerciseModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg shadow-xl w-full max-w-4xl relative">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-1xl relative">
             <!-- Modal Header -->
             <div class="flex items-center justify-between p-4 border-b">
 
@@ -75,8 +85,8 @@
                     &times;
                 </button>
             </div>
-            <!-- PHP File -->
-            <iframe id="modalFrame" src="" class="w-full h-[calc(80vh-100px)] rounded-b-lg border-0">
+            <!-- it will appear the php file -->
+            <iframe id="modalFrame" src="" class="w-full h-[calc(80vh)] rounded-b-lg border-0">
             </iframe>
         </div>
     </div>
