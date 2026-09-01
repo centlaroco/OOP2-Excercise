@@ -27,8 +27,8 @@ class EWalletPayment{
         $fee = 1.50; //giving the flat fee for E-Wallet
         $total = $amount + $fee;
         return "Processing E-Wallet Card Payment: $" . number_format($amount,2) .
-            "| Fee: $" . number_format($fee,2) . 
-            "| Total: $" . number_format($total,2);
+            " | Fee: $" . number_format($fee,2) . 
+            " | Total: $" . number_format($total,2);
     }
 }
 $payments = [

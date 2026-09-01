@@ -78,10 +78,10 @@ foreach($employeesBonus as $employBonus){
         <?php foreach($employeesBonus as $employBonus): ?>
             <div class="bg-gray-100 p-5 rounded-lg border border-gray-100 shadow">
                 <h2 class="text-xl font-bold text-blue-600">
-                    <?php echo get_class($employBonus); ?>
+                    <?= get_class($employBonus); ?>
                 </h2>
                 <p class="text-gray-700">
-                    <?php echo $employBonus->getDetails(); ?>
+                    <?= $employBonus->getDetails(); ?>
                 </p>
             </div>
         <?php endforeach; ?>
