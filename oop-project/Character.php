@@ -30,4 +30,10 @@ class Archer extends Character{
         return "{$this->name} is performing a ranged attack!";
     }
 }
+
+$characters =[
+    new Warrior(),
+    new Mage(),
+    new Archer()
+]
 ?>
