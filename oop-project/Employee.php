@@ -99,7 +99,6 @@ $employees = [
 <body class="bg-gray-100 min-h-screen flex justify-center items-center">
 
     <div class="w-[50%] space-y-4 bg-white border p-10">
-        <h1 class="p-3 bg-blue-100 w-[100px] rounded-full">Exercise 1</h1>
         <?php foreach ($employees as $employee): ?>
             <div class="bg-gray-100 p-5 rounded-lg border border-gray-100 shadow">
                 <h2 class="text-xl font-bold text-blue-600">

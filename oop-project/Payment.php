@@ -51,7 +51,7 @@ $amount = 300;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Exercise 4</title>
+    <title>Exercise 5</title>
 </head>
 <body class="bg-gray-100 min-h-screen flex justify-center items-center">
     <div class="w-[50%] space-y-4 bg-white border p-10">
